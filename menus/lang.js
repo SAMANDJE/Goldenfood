@@ -120,7 +120,7 @@ const translations = {
     title_salade7: "DESTENAVE SALAD",
     desc_salade7: "( Egg white in omelet, blanched tomato, quail egg, sucrine salad, almonds, condied gizzard, cherry tomatoes, soybean sprouts, black olive, pickles, ham )",
     title_soupe1: "ONION SOUP",
-    title_soupe2: "VEGETABLE SOUP",
+    title_soupe2: "MINESTRONE VEGETABLE IN SOUP",
     desc_soupe2: "( Vegetable potage )",
     title_quiche: "QUICHE LORRAINE WITH SALAD",
     desc_quiche: "( shortcrust pastry, quiche sauce, beef ham )",
