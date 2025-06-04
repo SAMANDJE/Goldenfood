@@ -1,6 +1,6 @@
 const translations = {
   fr: {
-    starters: "ENTRÉES",
+    
     hot_dishes: "PLATS CHAUDS",
     sides: "GARNITURES",
     hot_drinks: "BOISSON CHAUDES",
@@ -94,7 +94,8 @@ const translations = {
 
   },
   en: {
-    starters: "STARTERS",
+    starters_c: " COLD STARTERS",
+    starters_h: " HOT STARTERS",
     hot_dishes: "HOT DISHES",
     sides: "SIDES",
     hot_drinks: "HOT DRINKS",
