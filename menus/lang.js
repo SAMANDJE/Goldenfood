@@ -182,6 +182,7 @@ const translations = {
     tarte:"CHOCOLATE PIE",
     Moelleux:"CHOCOLATE MOELLEUX",
     salade_fruit:"FRUIT SALAD",
+    salade_cesar:"CAESAR SALAD",
     creme:"BURNT CREAM",
     macaroni:"MARCARONI: TAGLATELLE/PENNE/SPAGHETTI",
     assiette:"PLATE OF SEASONAL FRUIT",
