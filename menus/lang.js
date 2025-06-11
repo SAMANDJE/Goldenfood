@@ -94,6 +94,7 @@ const translations = {
 
   },
   en: {
+    mushroom_cream:"MUSHROOM-CREAM ",
     starters_c: " COLD STARTERS",
     starters_h: " HOT STARTERS",
     hot_dishes: "HOT DISHES",
