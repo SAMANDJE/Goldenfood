@@ -17,21 +17,23 @@
         background-color: #f8f9fa;
       }
       .card {
-        margin-bottom: 20px;
-        transition: transform 0.3s;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      }
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
       .card:hover {
         transform: translateY(-5px);
         box-shadow: 0 6px 12px rgba(0,0,0,0.15);
       }
-      .card-img-top {
-        height: 356px;
-        object-fit: cover;
-        width: 100%;
-      }
+       .card-img-top {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      object-position: center;
+    }
       .card-body {
         padding: 1.25rem;
         display: flex;
@@ -89,7 +91,7 @@
           margin-bottom: 15px;
         }
         .card-img-top {
-          height: 160px;
+         aspect-ratio: 4/3;
         }
         header h1 {
           font-size: 1.3rem;
