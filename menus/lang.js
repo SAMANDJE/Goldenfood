@@ -101,6 +101,7 @@ const translations = {
     sides: "SIDES",
     hot_drinks: "HOT DRINKS",
     drinks: "DRINKS",
+    drinksa:"ALCOHOLIC BEVERAGE",
     beer: "BEER",
     wine: "WINE & CHAMPAGNE",
     sandwich: "SANDWICH & FAST-FOOD",
