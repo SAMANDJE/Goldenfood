@@ -24,7 +24,7 @@ const translations = {
     title_salade7: "SALADE DESTENAVE",
     desc_salade7: "( Blanc d'œuf en omelette, tomate amandée, œuf de caille, salade sucrine, amandes, gésier confit, tomates cerise, pousse de soja, olive noire, cornichon, jambon )",
     title_soupe1: "SOUPE À L'OIGNON",
-    title_soupe2: "SOUPE AUX LÉGUMES",
+    
     desc_soupe2: "( Légumes en potage )",
     title_quiche: "QUICHE LORRAINE ET SA SALADE",
     desc_quiche: "( pâte brisée, sauce quiche, jambon de bœuf )",
