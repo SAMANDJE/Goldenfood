@@ -1,122 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BOISSON CHAUDES</title>
-    
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
-    <!--HEADER-->
-    <header>
-      <a href="../index.html">
-        <i class="fas fa-arrow-left fa-lg"></i>
-      </a>
-      <h1>GOLDEN FOOD</h1>
-      <script src="../menus/lang.js"></script>
-    </header>
-    <style>
-      img{
-        width:474px;
-        height:230px;
-      }
-    </style>
-    <div class="row justify-content-around">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/EXPRESO.jpg" class="card-img-top" alt="BierePression">
-          <div class="card-body">
-              <h5 class="card-title">EXPRESSO</h5>
-              
-             <h4> <span class="ms-4 badge bg-secondary text-end">1.500FRS</span></h4>
-          </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <img src="images/late1.jpg" class="card-img-top" alt="BierePression">
-        <div class="card-body">
-            <h5 class="card-title" data-i18n="cafe_l">CAFE AU LAIT</h5>
-            
-           <h4> <span class="ms-4 badge bg-secondary text-end">2.000FRS</span></h4>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <img src="images/CAFE SIMPLE.jpg" class="card-img-top" alt="BierePression">
-          <div class="card-body">
-              <h5 class="card-title" data-i18n="cafe_s">CAFE SIMPLE</h5>
-              
-         
-             <h4> <span class="ms-4 badge bg-secondary text-end">1.000FRS</span></h4>
-          </div>
-      </div>
-      
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <img src="images/NESCAFE.jpg" class="card-img-top" alt="BierePression">
-      <div class="card-body">
-          <h5 class="card-title"data-i18n="nescafe">NESCAFE</h5>
-          
-          
-          <h4><span class="ms-4 badge bg-secondary text-end">1.000FRS</span></h4>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <img src="images/DECAFEINE.jpg" class="card-img-top" alt="BierePression">
-      <div class="card-body">
-          <h5 class="card-title" data-i18n="decafeine">DECAFEINE</h5>
-          
-          
-         <h4> <span class="ms-4 badge bg-secondary text-end">1.500FRS</span></h4>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <img src="images/CAPPUCCINO.jpg" class="card-img-top" alt="BierePression">
-      <div class="card-body">
-          <h5 class="card-title" data-i18n="cappuccino">CAPPUCCINO</h5>
-          
-          <h4><span class="ms-4 badge bg-secondary text-end">1.500FRS</span></h4>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <img src="images/grog1.jpg" class="card-img-top" alt="BierePression">
-      <div class="card-body">
-          <h5 class="card-title" data-i18n="grog">GROG</h5>
-          
-          <h4><span class="ms-4 badge bg-secondary text-end">3.000FRS</span></h4>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <img src="images/chocolat1.jpg" class="card-img-top" alt="BierePression">
-        <div class="card-body">
-            <h5 class="card-title" data-i18n="chocolat">CHOCOLAT CHAUD</h5>
-            
-            <h4><span class="ms-4 badge bg-secondary text-end">1.500FRS</span></h4>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <img src="images/lait1.jpg" class="card-img-top" alt="Lait chaud">
-        <div class="card-body">
-            <h5 class="card-title" data-i18n="lait">LAIT CHAUD</h5>
-            
-            <h4><span class="ms-4 badge bg-secondary text-end">1.000FRS</span></h4>
-        </div>
-      </div>
-      
-    
-</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boissons Chaudes - Golden Food</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--FOOTER-->
-    <footer>
-      <h5>GOLDEN FOOD</h5>
-      <ul>
-       
-        </li>
-        
-        <li><a href="mailto:restaurant@goldenpalacehotel.ci">Contact</a></li>
-      </ul>
-    </footer>
-   
-  </body>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .card {
+      margin-bottom: 20px;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-img-top {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1.25rem;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .badge.bg-secondary {
+      background-color: #d4af37 !important;
+      color: #343a40;
+      font-size: 0.9rem;
+      padding: 0.5em 0.75em;
+    }
+  </style>
+</head>
+<body>
+  <!--HEADER-->
+  <header class="container-fluid bg-dark text-white py-3">
+    <div class="row align-items-center">
+      <div class="col-2">
+        <a href="../index.html" class="text-white">
+          <i class="fas fa-arrow-left fa-lg"></i>
+        </a>
+      </div>
+      <div class="col-8 text-center">
+        <h1 class="mb-0">GOLDEN FOOD</h1>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <h2 class="text-center mb-4">BOISSONS CHAUDES</h2>
+    
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Expresso -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/EXPRESO.jpg" class="card-img-top" alt="Expresso">
+          <div class="card-body">
+            <h5 class="card-title">EXPRESSO</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">1.500 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Café au lait -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/late1.jpg" class="card-img-top" alt="Café au lait">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="cafe_l">CAFÉ AU LAIT</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">2.000 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Café simple -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/CAFE SIMPLE.jpg" class="card-img-top" alt="Café simple">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="cafe_s">CAFÉ SIMPLE</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">1.000 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Nescafé -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/NESCAFE.jpg" class="card-img-top" alt="Nescafé">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="nescafe">NESCAFÉ</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">1.000 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Décaféiné -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/DECAFEINE.jpg" class="card-img-top" alt="Décaféiné">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="decafeine">DÉCAFÉINÉ</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">1.500 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cappuccino -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/CAPPUCCINO.jpg" class="card-img-top" alt="Cappuccino">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="cappuccino">CAPPUCCINO</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">1.500 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grog -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/grog1.jpg" class="card-img-top" alt="Grog">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="grog">GROG</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">3.000 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chocolat chaud -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/chocolat1.jpg" class="card-img-top" alt="Chocolat chaud">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="chocolat">CHOCOLAT CHAUD</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">1.500 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lait chaud -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="images/lait1.jpg" class="card-img-top" alt="Lait chaud">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="lait">LAIT CHAUD</h5>
+            <div class="text-center">
+              <h4><span class="badge bg-secondary">1.000 FCFA</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <!--FOOTER-->
+  <footer class="container-fluid bg-dark text-white py-4 mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h5>GOLDEN FOOD</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="mailto:restaurant@goldenpalacehotel.ci" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Your language script -->
+  <script src="../menus/lang.js"></script>
+</body>
 </html>
