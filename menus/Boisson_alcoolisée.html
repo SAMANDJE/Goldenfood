@@ -9,8 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-       .card {
+      .card {
         margin-bottom: 20px;
+        height: 100%;
       }
       .badge {
         font-size: 1rem;
@@ -20,8 +21,45 @@
         margin: 30px 0 20px;
         padding-bottom: 10px;
         border-bottom: 2px solid #ddd;
-        Background-color: red;
+        background-color: red;
         text-align:center;
+        color: white;
+      }
+      /* Conteneur d'image amélioré */
+      .card-img-container {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f9fa;
+        padding: 10px;
+      }
+      .card-img-top {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+      }
+      .card-title {
+        flex-grow: 1;
+      }
+      /* Correction des colonnes mal dimensionnées */
+      .col-lg-32 {
+        flex: 0 0 auto;
+        width: 25%;
+      }
+      @media (max-width: 992px) {
+        .col-lg-32 {
+          width: 50%;
+        }
+      }
+      @media (max-width: 576px) {
+        .col-lg-32 {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -41,188 +79,294 @@
       <div class="row justify-content-around">
         <!-- RHUM SECTION -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/pastis51.jpg" class="card-img-top" alt="Pastis 51">
-          <div class="card-body">
-            <h5 class="card-title">PASTIS 51</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4> 
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/pastis51.jpg" class="card-img-top" alt="Pastis 51 - Bouteille de Pastis 51">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">PASTIS 51</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4> 
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/ricard.webp" class="card-img-top" alt="Ricard">
-          <div class="card-body">
-            <h5 class="card-title">RICARD</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4> 
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/ricard.webp" class="card-img-top" alt="Ricard - Bouteille de Ricard">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">RICARD</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4> 
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/james blanc.webp" class="card-img-top" alt="Rhum St James Blanc">
-          <div class="card-body">
-            <h5 class="card-title">RHUM ST JAMES BLANC</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4> 
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/james blanc.webp" class="card-img-top" alt="Rhum St James Blanc - Bouteille de rhum blanc">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">RHUM ST JAMES BLANC</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4> 
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/james brun.webp" class="card-img-top" alt="Rhum St James Brun">
-          <div class="card-body">
-            <h5 class="card-title">RHUM ST JAMES BRUN</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4> 
-          </div>
-        </div>
-
-        <!-- COGNAC SECTION -->
-        <p class="section-title">GOGNAC</p>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/calvados.png" class="card-img-top" alt="Calvados">
-          <div class="card-body">
-            <h5 class="card-title">CALVADOS</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">6.000F</span></h4> 
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/napoleon.jpeg" class="card-img-top" alt="Napoleon">
-          <div class="card-body">
-            <h5 class="card-title">NAPOLEON</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">6.000F</span></h4> 
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-32">
-          <img src="images/remi martin.webp" class="card-img-top" alt="Remy Martin">
-          <div class="card-body">
-            <h5 class="card-title">REMY MARTIN</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">6.000F</span></h4> 
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-32">
-          <img src="images/hennessy.jpeg" class="card-img-top" alt="HENESSY">
-          <div class="card-body">
-            <h5 class="card-title">HENESSY</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">6.000F</span></h4> 
-          </div>
-        </div>
-         <p class="section-title">GIN</p>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/gin gordons's.webp" class="card-img-top" alt="GIN GORDON'S">
-          <div class="card-body">
-            <h5 class="card-title">GIN GORDON'S</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
-          </div>
-           </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/buffeter.webp" class="card-img-top" alt="GIN BUFFETER">
-          <div class="card-body">
-            <h5 class="card-title">GIN BUFFETER</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/bombay.webp" class="card-img-top" alt="GIN BOMBAY">
-          <div class="card-body">
-            <h5 class="card-title">GIN BOMBAY</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/james brun.webp" class="card-img-top" alt="Rhum St James Brun - Bouteille de rhum ambré">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">RHUM ST JAMES BRUN</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4> 
+            </div>
           </div>
         </div>
       </div>
-       <p class="section-title">TEQUILA & VODKA</p>
- <div class="row justify-content-around">
 
- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/VODKA ABSOLU.jpeg" class="card-img-top" alt="vodka absolu">
-          <div class="card-body">
-            <h5 class="card-title">VODKA ABSOLU</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+        <!-- COGNAC SECTION -->
+        <p class="section-title">COGNAC</p>
+        <div class="row justify-content-around">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/calvados.png" class="card-img-top" alt="Calvados - Bouteille de Calvados">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">CALVADOS</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">6.000F</span></h4> 
+            </div>
           </div>
         </div>
 
- <div class="col-12 col-sm-6 col-md-4 col-lg-32">
-          <img src="images/VODKA SMIRNOFF.jpeg" class="card-img-top" alt="GIN BOMBAY">
-          <div class="card-body">
-            <h5 class="card-title">VODKA SMIRNOFF</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/napoleon.jpeg" class="card-img-top" alt="Napoleon - Bouteille de cognac Napoleon">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">NAPOLEON</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">6.000F</span></h4> 
+            </div>
           </div>
         </div>
-               <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/VODKA PALIAKOV.webp" class="card-img-top" alt="GIN BOMBAY">
-          <div class="card-body">
-            <h5 class="card-title">VODKA PALIAKOV</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/remi martin.webp" class="card-img-top" alt="Remy Martin - Bouteille de cognac Remy Martin">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">REMY MARTIN</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">6.000F</span></h4> 
+            </div>
           </div>
         </div>
-       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/TEQUILA CAIMAN.webp" class="card-img-top" alt="GIN BOMBAY">
-          <div class="card-body">
-            <h5 class="card-title">TEQUILA CAIMAN</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/hennessy.jpeg" class="card-img-top" alt="Hennessy - Bouteille de cognac Hennessy">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">HENESSY</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">6.000F</span></h4> 
+            </div>
           </div>
         </div>
- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/GREY GOSSE VODKA.jpeg" class="card-img-top" alt="GIN BOMBAY">
-          <div class="card-body">
-            <h5 class="card-title">GREY GOSSE VODKA</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+      </div>
+      
+      <!-- GIN SECTION -->
+      <p class="section-title">GIN</p>
+      <div class="row justify-content-around">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/gin gordons's.webp" class="card-img-top" alt="Gin Gordon's - Bouteille de gin Gordon's">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GIN GORDON'S</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
           </div>
         </div>
-       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/TEQUILA DON FULANO.png" class="card-img-top" alt="GIN BOMBAY">
-          <div class="card-body">
-            <h5 class="card-title">TEQUILA DON FULANO</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+        
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/buffeter.webp" class="card-img-top" alt="Gin Buffeter - Bouteille de gin Buffeter">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GIN BUFFETER</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
           </div>
         </div>
-    </div>
-     <!-- LIQUEURS SECTION -->
+        
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/bombay.webp" class="card-img-top" alt="Gin Bombay - Bouteille de gin Bombay Sapphire">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GIN BOMBAY</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- TEQUILA & VODKA SECTION -->
+      <p class="section-title">TEQUILA & VODKA</p>
+      <div class="row justify-content-around">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/VODKA ABSOLU.jpeg" class="card-img-top" alt="Vodka Absolut - Bouteille de vodka Absolut">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">VODKA ABSOLU</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/VODKA SMIRNOFF.jpeg" class="card-img-top" alt="Vodka Smirnoff - Bouteille de vodka Smirnoff">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">VODKA SMIRNOFF</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/VODKA PALIAKOV.webp" class="card-img-top" alt="Vodka Paliakov - Bouteille de vodka Paliakov">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">VODKA PALIAKOV</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/TEQUILA CAIMAN.webp" class="card-img-top" alt="Tequila Caiman - Bouteille de tequila Caiman">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">TEQUILA CAIMAN</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/GREY GOSSE VODKA.jpeg" class="card-img-top" alt="Grey Goose Vodka - Bouteille de vodka Grey Goose">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GREY GOSSE VODKA</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/TEQUILA DON FULANO.png" class="card-img-top" alt="Tequila Don Fulano - Bouteille de tequila Don Fulano">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">TEQUILA DON FULANO</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- LIQUEURS SECTION -->
       <p class="section-title">Liqueurs</p>
       <div class="row justify-content-around">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/campari.jpeg" class="card-img-top" alt="Campari">
-          <div class="card-body">
-            <h5 class="card-title">CAMPARI</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/campari.jpeg" class="card-img-top" alt="Campari - Bouteille de liqueur Campari">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">CAMPARI</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/JET27.jpeg" class="card-img-top" alt="Jet 27">
-          <div class="card-body">
-            <h5 class="card-title">JET 27</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/JET27.jpeg" class="card-img-top" alt="Jet 27 - Bouteille de liqueur Jet 27">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">JET 27</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/cointreau.jpeg" class="card-img-top" alt="Cointreau">
-          <div class="card-body">
-            <h5 class="card-title">COINTREAU</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/cointreau.jpeg" class="card-img-top" alt="Cointreau - Bouteille de liqueur Cointreau">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">COINTREAU</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/malibu.jpeg" class="card-img-top" alt="Malibu">
-          <div class="card-body">
-            <h5 class="card-title">MALIBU</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/malibu.jpeg" class="card-img-top" alt="Malibu - Bouteille de liqueur Malibu">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">MALIBU</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/armagnac.jpg" class="card-img-top" alt="Armagnac">
-          <div class="card-body">
-            <h5 class="card-title">ARMAGNAC</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/armagnac.jpg" class="card-img-top" alt="Armagnac - Bouteille d'Armagnac">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">ARMAGNAC</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/floc.jpeg" class="card-img-top" alt="Floc de Gascogne">
-          <div class="card-body">
-            <h5 class="card-title">FLOC DE GASCOGNE</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/floc.jpeg" class="card-img-top" alt="Floc de Gascogne - Bouteille de Floc de Gascogne">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">FLOC DE GASCOGNE</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
       </div>
@@ -231,26 +375,38 @@
       <p class="section-title">Vermouths</p>
       <div class="row justify-content-around">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/martini blanc.jpg" class="card-img-top" alt="Martini Blanc">
-          <div class="card-body">
-            <h5 class="card-title">MARTINI BLANC</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/martini blanc.jpg" class="card-img-top" alt="Martini Blanc - Bouteille de Martini Blanc">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">MARTINI BLANC</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/martini rouge.jpeg" class="card-img-top" alt="Martini Rouge">
-          <div class="card-body">
-            <h5 class="card-title">MARTINI ROUGE</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/martini rouge.jpeg" class="card-img-top" alt="Martini Rouge - Bouteille de Martini Rouge">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">MARTINI ROUGE</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/martini rose.png" class="card-img-top" alt="Martini Rose">
-          <div class="card-body">
-            <h5 class="card-title">MARTINI ROSE</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/martini rose.png" class="card-img-top" alt="Martini Rose - Bouteille de Martini Rosé">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">MARTINI ROSE</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
       </div>
@@ -259,94 +415,139 @@
       <p class="section-title">Whiskies</p>
       <div class="row justify-content-around">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/Whisky-peche.jpg" class="card-img-top" alt="Whisky Pêche">
-          <div class="card-body">
-            <h5 class="card-title">WHISKY PÊCHE</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/Whisky-peche.jpg" class="card-img-top" alt="Whisky Pêche - Bouteille de whisky aromatisé à la pêche">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">WHISKY PÊCHE</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">3.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/black label.jpeg" class="card-img-top" alt="Black Label">
-          <div class="card-body">
-            <h5 class="card-title">BLACK LABEL</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">5.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/black label.jpeg" class="card-img-top" alt="Black Label - Bouteille de Johnnie Walker Black Label">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">BLACK LABEL</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">5.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/red label.jpeg" class="card-img-top" alt="Red Label">
-          <div class="card-body">
-            <h5 class="card-title">RED LABEL</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/red label.jpeg" class="card-img-top" alt="Red Label - Bouteille de Johnnie Walker Red Label">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">RED LABEL</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/bailey's.webp" class="card-img-top" alt="Bailey's">
-          <div class="card-body">
-            <h5 class="card-title">BAILEY'S</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/bailey's.webp" class="card-img-top" alt="Bailey's - Bouteille de liqueur irlandaise Bailey's">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">BAILEY'S</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/jack daniel.jpeg" class="card-img-top" alt="Jack Daniel">
-          <div class="card-body">
-            <h5 class="card-title">JACK DANIEL</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">5.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/jack daniel.jpeg" class="card-img-top" alt="Jack Daniel's - Bouteille de whisky Jack Daniel's">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">JACK DANIEL</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">5.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/chiva regal.jpeg" class="card-img-top" alt="Chivas Regal">
-          <div class="card-body">
-            <h5 class="card-title">CHIVAS REGAL</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">5.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/chiva regal.jpeg" class="card-img-top" alt="Chivas Regal - Bouteille de whisky Chivas Regal">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">CHIVAS REGAL</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">5.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/clan_campbell.jpeg" class="card-img-top" alt="Clan Campbell">
-          <div class="card-body">
-            <h5 class="card-title">CLAN CAMPBELL</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/clan_campbell.jpeg" class="card-img-top" alt="Clan Campbell - Bouteille de whisky Clan Campbell">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">CLAN CAMPBELL</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/ballantines.webp" class="card-img-top" alt="Ballantine's">
-          <div class="card-body">
-            <h5 class="card-title">BALLANTINE'S</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/ballantines.webp" class="card-img-top" alt="Ballantine's - Bouteille de whisky Ballantine's">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">BALLANTINE'S</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/duncaan.webp" class="card-img-top" alt="Duncan Taylor">
-          <div class="card-body">
-            <h5 class="card-title">DUNCAN TAYLOR</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/duncaan.webp" class="card-img-top" alt="Duncan Taylor - Bouteille de whisky Duncan Taylor">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">DUNCAN TAYLOR</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/william grant.jpeg" class="card-img-top" alt="William Grant">
-          <div class="card-body">
-            <h5 class="card-title">WILLIAM GRANT</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/william grant.jpeg" class="card-img-top" alt="William Grant - Bouteille de whisky William Grant">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">WILLIAM GRANT</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+            </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="images/cuittu sark.jpeg" class="card-img-top" alt="Cutty Sark">
-          <div class="card-body">
-            <h5 class="card-title">CUITTU SARK</h5>
-            <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+          <div class="card">
+            <div class="card-img-container">
+              <img src="images/cuittu sark.jpeg" class="card-img-top" alt="Cutty Sark - Bouteille de whisky Cutty Sark">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">CUTTY SARK</h5>
+              <h4><span class="ms-4 badge bg-secondary text-end">4.000F</span></h4>
+            </div>
           </div>
         </div>
       </div>
     </div>
     
-    </body>   
-  </html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>   
+</html>
