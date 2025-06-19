@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boissons - Golden Food</title>
+  <title>BOISSON</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Font Awesome -->
@@ -19,10 +19,19 @@
     .card:hover {
       transform: translateY(-5px);
     }
-    .card-img-top {
+    .card-img-container {
       height: 180px;
-      object-fit: cover;
-      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: #f8f9fa;
+    }
+    .card-img-container img {
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
     .card-body {
       padding: 1.25rem;
@@ -73,7 +82,9 @@
       <!-- Eau 0.5L -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/eau.jpg" class="card-img-top" alt="Eau minérale 0.5L">
+          <div class="card-img-container">
+            <img src="images/eau.jpg" alt="Eau minérale 0.5L">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="eau_minerale_05l">EAU MINÉRALE 0.5L</h5>
             <div class="text-center">
@@ -86,7 +97,9 @@
       <!-- Eau 1.5L -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/CELESTE1.5.jpg" class="card-img-top" alt="Eau minérale 1.5L">
+          <div class="card-img-container">
+            <img src="images/CELESTE1.5.jpg" alt="Eau minérale 1.5L">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="eau_minerale_15l">EAU MINÉRALE 1.5L</h5>
             <div class="text-center">
@@ -104,7 +117,9 @@
       <!-- Jus d'Ananas -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/jus ananas.jpg" class="card-img-top" alt="Jus d'ananas">
+          <div class="card-img-container">
+            <img src="images/jus ananas.jpg" alt="Jus d'ananas">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="jus_d_ananas">JUS D'ANANAS</h5>
             <div class="text-center">
@@ -117,7 +132,9 @@
       <!-- Jus de Bissap -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/bissap.jpg" class="card-img-top" alt="Jus de bissap">
+          <div class="card-img-container">
+            <img src="images/bissap.jpg" alt="Jus de bissap">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="jus_de_bissap">JUS DE BISSAP</h5>
             <div class="text-center">
@@ -130,7 +147,9 @@
       <!-- Jus de Pastèque -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/jus pasteque.jpg" class="card-img-top" alt="Jus de pastèque">
+          <div class="card-img-container">
+            <img src="images/jus pasteque.jpg" alt="Jus de pastèque">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="jus_de_pasteque">JUS DE PASTÈQUE</h5>
             <div class="text-center">
@@ -143,7 +162,9 @@
       <!-- Jus d'Orange -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/jus d'orange.jpg" class="card-img-top" alt="Jus d'orange">
+          <div class="card-img-container">
+            <img src="images/jus d'orange.jpg" alt="Jus d'orange">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="jus_d_orange">JUS D'ORANGE</h5>
             <div class="text-center">
@@ -156,7 +177,9 @@
       <!-- Jus de Gimgimbre -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/gimgimbre.jpg" class="card-img-top" alt="Jus de Gimgimbre">
+          <div class="card-img-container">
+            <img src="images/gimgimbre.jpg" alt="Jus de Gimgimbre">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="jus_de_gimgimbre">JUS DE GIMGIMBRE</h5>
             <div class="text-center">
@@ -174,7 +197,9 @@
       <!-- Coca Cola -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/coca cola.jpg" class="card-img-top" alt="Coca Cola">
+          <div class="card-img-container">
+            <img src="images/coca cola.jpg" alt="Coca Cola">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="coca_cola">COCA COLA</h5>
             <div class="text-center">
@@ -187,7 +212,9 @@
       <!-- Coca Zero -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/cocazero.jpg" class="card-img-top" alt="Coca Cola Zero">
+          <div class="card-img-container">
+            <img src="images/cocazero.jpg" alt="Coca Cola Zero">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="coca_cola_zero">COCA COLA ZERO</h5>
             <div class="text-center">
@@ -200,7 +227,9 @@
       <!-- Coca/Sprite/Fanta -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/fant.webp" class="card-img-top" alt="Coca, Sprite, Fanta">
+          <div class="card-img-container">
+            <img src="images/fant.webp" alt="Coca, Sprite, Fanta">
+          </div>
           <div class="card-body">
             <h5 class="card-title">COCA COLA, SPRITE, FANTA</h5>
             <div class="text-center">
@@ -213,7 +242,9 @@
       <!-- Orangina -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/orangina1.jpg" class="card-img-top" alt="Orangina">
+          <div class="card-img-container">
+            <img src="images/orangina1.jpg" alt="Orangina">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="orangina">ORANGINA</h5>
             <div class="text-center">
@@ -226,7 +257,9 @@
       <!-- Tonic -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/youki_tonic.png" class="card-img-top" alt="Tonic">
+          <div class="card-img-container">
+            <img src="images/youki_tonic.png" alt="Tonic">
+          </div>
           <div class="card-body">
             <h5 class="card-title">TONIC</h5>
             <div class="text-center">
@@ -244,7 +277,9 @@
       <!-- Cody's -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/cody's.png" class="card-img-top" alt="Cody's">
+          <div class="card-img-container">
+            <img src="images/cody's.png" alt="Cody's">
+          </div>
           <div class="card-body">
             <h5 class="card-title" data-i18n="codys">CODY'S</h5>
             <div class="text-center">
@@ -257,7 +292,9 @@
       <!-- Red Bull -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
-          <img src="images/RedBull.jpg" class="card-img-top" alt="Red Bull">
+          <div class="card-img-container">
+            <img src="images/RedBull.jpg" alt="Red Bull">
+          </div>
           <div class="card-body">
             <h5 class="card-title">RED BULL</h5>
             <div class="text-center">
