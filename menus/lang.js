@@ -234,6 +234,7 @@ const translations = {
     tacos_poulet:"CHICKEN TACOS",
     risoto:"MUSHROOM RISOTO",
     soupe_carpe:"CARP SOUP",
+    cottelette_d'agneau:"GRILLED LAMB CHOP WITH ORIENTAL FLAVORS",
     
 
 
