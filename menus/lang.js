@@ -197,6 +197,7 @@ const translations = {
     carbonara:"CARBONARA SAUCE",
     pain_chocolat:"chocolate croissant",
     pain_raisin:"RAISIN BREAD",
+    pain_boule:"ROUND BREAD",
     darne_merou:"SNAKE GROUPER STEAK WITH MANTAISE",
     carpe_braisée:"BRAISED CARPE",
     accompagnement:"ATTIEKE/ALLOCO/YAM FRIES",
@@ -235,7 +236,9 @@ const translations = {
     risoto:"MUSHROOM RISOTO",
     soupe_carpe:"CARP SOUP",
     cottelette_dagneau:"GRILLED LAMB CHOP WITH ORIENTAL FLAVORS",
-    mushroom_cream:"MUSHROOM CREAM",  
+    mushroom_cream:"MUSHROOM CREAM", 
+    viandes:"OUR MEATS",
+    poissons:"OUR FISH AND SEAFOOD",
       
     
 
