@@ -161,6 +161,7 @@ const translations = {
   grog:"GROG",
   chocolat:"CHOCOLATE LIME",
   lait:"LIME MILK",
+    eau:"MINERAL WATER",
   eau_minerale_05l: "MINERAL WATER 0.5L",
     eau_minerale_15l: "MINERAL WATER 1.5L",
     jus_de_citron: "LEMON JUICE",
@@ -240,6 +241,14 @@ const translations = {
     viandes:"OUR MEATS",
     poissons:"OUR FISH AND SEAFOOD",
     ferm:"green salad, Egg, chicken meat, onion, tomatoes...)",
+    mojit:"(Brown rum, fresh mint, sparkling water, lime, cane sugar syrup, crushed ice)",
+    cocktail_de_fruit:"FRUIT COCKTAIL",
+    cocktail_fruit:"(Mango, Pineapple, Orange, Lemon)",
+    planteur:"(Rum, Guava, Pineapple, Orange, grenadine syrup, passion.)",
+    magarit:"(tequila, triple sec, lemon juice)",
+    jus_naturel:"NATURAL JUICES",
+    energy:"ENERGY DRINKS",
+    
       
     
 
