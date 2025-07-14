@@ -239,6 +239,7 @@ const translations = {
     mushroom_cream:"MUSHROOM CREAM", 
     viandes:"OUR MEATS",
     poissons:"OUR FISH AND SEAFOOD",
+    ferm:"green salad, Egg, chicken meat, onion, tomatoes...)",
       
     
 
