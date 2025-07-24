@@ -63,8 +63,8 @@ const translations = {
   grog:"GROG",
   chocolat:"CHOCOLAT CHAUX",
   lait:"LAIT CHAUT",
-  eau_minerale_05l: "EAU MINERALE 0.5L",
-    eau_minerale_15l : "EAU MINERALE 1.5L",
+  
+    
     jus_de_citron: "JUS DE CITRON",
     jus_d_ananas: "JUS D'ANANAS",
     jus_de_bissap: "JUS DE BISSAP",
@@ -72,8 +72,8 @@ const translations = {
     jus_de_pamplemouse: "JUS DE PAMPLEMOUSE",
     jus_d_orange: "JUS D'ORANGE",
     jus_de_gimgimbre: "JUS DE GIMGIMBRE",
-    coca_cola: "COCA COLA",
-    coca_cola_zero: "COCA COLA ZERO",
+    
+    
     sprite: "SPRITE",
     fanta_orange: "FANTA ORANGE",
     orangina: "ORANGINA",
