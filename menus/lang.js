@@ -71,7 +71,7 @@ const translations = {
     jus_de_pasteque: "JUS DE PASTEQUE",
     jus_de_pamplemouse: "JUS DE PAMPLEMOUSE",
     jus_d_orange: "JUS D'ORANGE",
-    jus_de_gimgimbre: "JUS DE GIMGIMBRE",
+    
     
     
     sprite: "SPRITE",
