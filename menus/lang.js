@@ -248,6 +248,8 @@ const translations = {
     magarit:"(tequila, triple sec, lemon juice)",
     jus_naturel:"NATURAL JUICES",
     energy:"ENERGY DRINKS",
+    biere:"DRAFT BEER",
+    biere1:"BEER",
     
       
     
