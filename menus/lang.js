@@ -250,6 +250,8 @@ const translations = {
     energy:"ENERGY DRINKS",
     biere:"DRAFT BEER",
     biere1:"BEER",
+    ss_alcools:"ALCOHOL-FREE",
+    av_alcools:"WITH ALCOHOLS",
     
       
     
